@@ -1,0 +1,10 @@
+C:\Users\chris\source\repos\Connect4\bin\Debug\Connect4.exe.config
+C:\Users\chris\source\repos\Connect4\bin\Debug\Connect4.exe
+C:\Users\chris\source\repos\Connect4\bin\Debug\Connect4.pdb
+C:\Users\chris\source\repos\Connect4\obj\Debug\Connect4.csprojAssemblyReference.cache
+C:\Users\chris\source\repos\Connect4\obj\Debug\Connect4.Form1.resources
+C:\Users\chris\source\repos\Connect4\obj\Debug\Connect4.Properties.Resources.resources
+C:\Users\chris\source\repos\Connect4\obj\Debug\Connect4.csproj.GenerateResource.cache
+C:\Users\chris\source\repos\Connect4\obj\Debug\Connect4.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\Connect4\obj\Debug\Connect4.exe
+C:\Users\chris\source\repos\Connect4\obj\Debug\Connect4.pdb

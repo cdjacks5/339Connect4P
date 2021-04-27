@@ -27,6 +27,7 @@ namespace Connect4
     public partial class Form1 : Form
     {
         private Board board;
+       
         public Form1()
         {
             InitializeComponent();
@@ -39,8 +40,8 @@ namespace Connect4
         {
             //gets called when the main form is loaded
             board = new Board();
-
-        }
+          }
+        
 
         private void pic_board_Paint(object sender, PaintEventArgs e)
         {
@@ -49,14 +50,201 @@ namespace Connect4
         }
 
         
+        
 
         private void btn_col1_Click(object sender, EventArgs e)
-
         {
+             if(board.checkWin()==true)
+            {
+              DialogResult d = MessageBox.Show("There is a winner,Do you want to play again?","Winner",MessageBoxButtons.YesNo);
+                if(d == DialogResult.Yes)
+                {
+                    board.ResetBoard();
+                }
+                else if(d == DialogResult.No){
+                    Application.Exit();
+                }
+            }
+           
             //insert piece into board
-            board.PlayPiece(col:0);
-           if (board.ColumnIsFull(0))
+           if (board.ColumnIsFull(0)) { 
                 btn_col1.Enabled = false;
+                }
+            else
+            {
+                board.PlayPiece(col:0);
+                this.Refresh();
+                board.NextTurn();
+                
+            }
+          // end();
+        }
+
+        private void btn_col2_Click(object sender, EventArgs e)
+        {
+            if(board.checkWin()==true)
+            {
+              DialogResult d = MessageBox.Show("There is a winner,Do you want to play again?","Winner",MessageBoxButtons.YesNo);
+                if(d == DialogResult.Yes)
+                {
+                    board.ResetBoard();
+                }
+                else if(d == DialogResult.No){
+                    Application.Exit();
+                }
+            }
+            //insert piece into board
+            if (board.ColumnIsFull(1))
+            {
+                btn_col2.Enabled = false;
+            }
+            else
+            {
+                board.PlayPiece(col: 1);
+                this.Refresh();
+                board.NextTurn();
+            }
+        }
+
+        private void btn_col3_Click(object sender, EventArgs e)
+        {
+             if(board.checkWin()==true)
+            {
+              DialogResult d = MessageBox.Show("There is a winner,Do you want to play again?","Winner",MessageBoxButtons.YesNo);
+                if(d == DialogResult.Yes)
+                {
+                    board.ResetBoard();
+                }
+                else if(d == DialogResult.No){
+                    Application.Exit();
+                }
+            }
+            //insert piece into board
+            if (board.ColumnIsFull(2))
+            {
+                btn_col3.Enabled = false;
+            }
+            else
+            {
+                board.PlayPiece(col: 2);
+                this.Refresh();
+                board.NextTurn();
+            }
+        }
+
+        private void btn_col4_Click(object sender, EventArgs e)
+        {
+            if(board.checkWin()==true)
+            {
+              DialogResult d = MessageBox.Show("There is a winner,Do you want to play again?","Winner",MessageBoxButtons.YesNo);
+                if(d == DialogResult.Yes)
+                {
+                    board.ResetBoard();
+                }
+                else if(d == DialogResult.No){
+                    Application.Exit();
+                }
+            }
+            //insert piece into board
+            if (board.ColumnIsFull(3))
+            {
+                btn_col4.Enabled = false;
+            }
+            else
+            {
+                board.PlayPiece(col: 3);
+                this.Refresh();
+                board.NextTurn();
+            }
+        }
+
+        private void btn_col5_Click(object sender, EventArgs e)
+        {
+            if(board.checkWin()==true)
+            {
+              DialogResult d = MessageBox.Show("There is a winner,Do you want to play again?","Winner",MessageBoxButtons.YesNo);
+                if(d == DialogResult.Yes)
+                {
+                    board.ResetBoard();
+                }
+                else if(d == DialogResult.No){
+                    Application.Exit();
+                }
+            }
+            //insert piece into board
+            if (board.ColumnIsFull(4))
+            {
+                btn_col5.Enabled = false;
+            }
+            else
+            {
+                board.PlayPiece(col: 4);
+                this.Refresh();
+                board.NextTurn();
+            }
+        }
+
+        private void btn_col6_Click(object sender, EventArgs e)
+        {
+            if(board.checkWin()==true)
+            {
+              DialogResult d = MessageBox.Show("There is a winner,Do you want to play again?","Winner",MessageBoxButtons.YesNo);
+                if(d == DialogResult.Yes)
+                {
+                    board.ResetBoard();
+                }
+                else if(d == DialogResult.No){
+                    Application.Exit();
+                }
+            }
+            //insert piece into board
+            if (board.ColumnIsFull(5))
+            {
+                btn_col6.Enabled = false;
+            }
+            else
+            {
+                board.PlayPiece(col: 5);
+                this.Refresh();
+                board.NextTurn();
+            }
+        }
+
+        private void btn_col7_Click(object sender, EventArgs e)
+        {
+             if(board.checkWin()==true)
+            {
+              DialogResult d = MessageBox.Show("There is a winner,Do you want to play again?","Winner",MessageBoxButtons.YesNo);
+                if(d == DialogResult.Yes)
+                {
+                    board.ResetBoard();
+                }
+                else if(d == DialogResult.No){
+                    Application.Exit();
+                }
+            }
+            //insert piece into board
+            if (board.ColumnIsFull(6))
+            {
+                btn_col7.Enabled = false;
+            }
+            else
+            {
+                board.PlayPiece(col: 6);
+                this.Refresh();
+                board.NextTurn();
+            }
+        }
+
+        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            board.ResetBoard();
+            this.Refresh();
+        }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

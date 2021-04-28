@@ -51,7 +51,7 @@ namespace Connect4
 
         
         
-
+        //button 1
         private void btn_col1_Click(object sender, EventArgs e)
         {
              if(board.checkWin()==true)
@@ -77,9 +77,9 @@ namespace Connect4
                 board.NextTurn();
                 
             }
-          // end();
+          
         }
-
+        //button2
         private void btn_col2_Click(object sender, EventArgs e)
         {
             if(board.checkWin()==true)
@@ -105,7 +105,7 @@ namespace Connect4
                 board.NextTurn();
             }
         }
-
+        //button 3
         private void btn_col3_Click(object sender, EventArgs e)
         {
              if(board.checkWin()==true)
@@ -131,7 +131,7 @@ namespace Connect4
                 board.NextTurn();
             }
         }
-
+        //button 4
         private void btn_col4_Click(object sender, EventArgs e)
         {
             if(board.checkWin()==true)
@@ -157,7 +157,7 @@ namespace Connect4
                 board.NextTurn();
             }
         }
-
+        //button 5
         private void btn_col5_Click(object sender, EventArgs e)
         {
             if(board.checkWin()==true)
@@ -183,7 +183,7 @@ namespace Connect4
                 board.NextTurn();
             }
         }
-
+        //button 6
         private void btn_col6_Click(object sender, EventArgs e)
         {
             if(board.checkWin()==true)
@@ -209,7 +209,7 @@ namespace Connect4
                 board.NextTurn();
             }
         }
-
+        //button 7
         private void btn_col7_Click(object sender, EventArgs e)
         {
              if(board.checkWin()==true)
@@ -235,13 +235,13 @@ namespace Connect4
                 board.NextTurn();
             }
         }
-
+        //restart button
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
         {
             board.ResetBoard();
             this.Refresh();
         }
-
+        //quit button
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();

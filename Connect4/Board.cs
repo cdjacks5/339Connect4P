@@ -110,6 +110,7 @@ namespace Connect4
             }
         }
 
+        //method to check if there is a winner
         public bool checkWin()
         {
             //check win for across
@@ -151,7 +152,7 @@ namespace Connect4
                 }
             }
             
-            //check win for other diagonal
+            //check win for diagonal
             for (int x = 0; x < rows -3 ; x++)
             {
                 for (int y = 0; y < cols -3; y++)
@@ -176,8 +177,6 @@ namespace Connect4
                     board[i, col] = currentTurn;
                      break;
                     }
-                    
-                  
                     }
                     }
 
